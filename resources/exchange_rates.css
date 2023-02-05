@@ -1,0 +1,19 @@
+#exchange-rates {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+#exchange-rates table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#exchange-rates th, #exchange-rates td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#exchange-rates th {
+    background-color: #ddd;
+}

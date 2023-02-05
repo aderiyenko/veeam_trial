@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Currency Exchange Rates Extension",
+  "author": "Oleksiy Deriyenko",
+  "version": "1.0",
+  "description": "Extension that displays currency exchange rates on a special page",
+  "ResourceModules": {
+    "exchange.rates": {
+      "scripts": [
+        "resources/exchange_rates.js"
+      ],
+      "styles": [
+        "resources/exchange_rates.css"
+      ],
+      "dependencies": [
+        "mediawiki.api"
+      ]
+    }
+  }
+}
