@@ -1,0 +1,32 @@
+version: "3.4"
+
+services:
+  mediawiki:
+    image: mediawiki
+    ports:
+      - "8080:80"
+    networks:
+      - "mediawiki"
+    volumes:
+      - ./LocalSettings.php:/var/www/html/LocalSettings.php:ro
+      - ./:/var/www/html/extensions/ExchangeRates:ro
+
+  mysql:
+    image: mysql
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - "mediawiki"
+    environment:
+      - MYSQL_DATABASE=mediawiki
+      - MYSQL_USER=mediawiki
+      - MYSQL_PASSWORD=mediawiki
+      - MYSQL_ROOT_PASSWORD=mediawiki
+
+volumes:
+  mysql:
+    external: false
+networks:
+  mediawiki:
