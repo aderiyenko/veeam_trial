@@ -10,7 +10,10 @@
     "MediaWiki\\Extension\\ExchangeRates\\": "src/"
   },
   "SpecialPages": {
-    "ExchangeRates": "MediaWiki\\Extension\\ExchangeRates\\"
+    "ExchangeRates": "MediaWiki\\Extension\\ExchangeRates\\ExchangeRates"
+  },
+  "ExtensionMessagesFiles": {
+    "ExchangeRates": "src/ExchangeRates.i18n.alias.php"
   },
   "requires": {
     "MediaWiki": ">= 1.38.0",

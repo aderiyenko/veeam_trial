@@ -2,7 +2,9 @@ version: "3.4"
 
 services:
   mediawiki:
-    image: mediawiki
+    build:
+      dockerfile: "./docker/dockerfile"
+      context: .
     ports:
       - "8080:80"
     networks:
@@ -10,6 +12,9 @@ services:
     volumes:
       - ./LocalSettings.php:/var/www/html/LocalSettings.php:ro
       - ./:/var/www/html/extensions/ExchangeRates:ro
+    environment:
+      - XDEBUG_CONFIG=start_with_request=trigger trigger_value=XDEBUG_SESSION client_host=host.docker.internal client_port=9003 idekey=PHPSTORM
+      - XDEBUG_MODE=debug
 
   mysql:
     image: mysql
