@@ -12,5 +12,7 @@ in your `docker-compose.yaml`. Where `./LocalSettings.php` is the path to the do
 ```php
 wfLoadExtension( 'ExchangeRates' );
 ```
-to the bottom of `LocalSettings.php`
+to the bottom of `LocalSettings.php`.
+
+
 6. `docker-compose down && docker-sompose up -d`
