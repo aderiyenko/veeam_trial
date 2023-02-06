@@ -6,7 +6,7 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = [];
+$specialPageAliases = [ ];
 
 /** English
  * @author Oleksiy Deriyenko
