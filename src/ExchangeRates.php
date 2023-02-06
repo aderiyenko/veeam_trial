@@ -1,5 +1,5 @@
 <?php
-namespace MediaWiki\Extension\CurrencyExchangeRates;
+namespace MediaWiki\Extension\ExchangeRates;
 
 use MediaWiki\MediaWikiServices;
 use SpecialPage;
