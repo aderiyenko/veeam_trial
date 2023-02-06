@@ -1,12 +1,11 @@
 <?php
 namespace MediaWiki\Extension\ExchangeRates;
 
-use MediaWiki\MediaWikiServices;
 use SpecialPage;
 
 class ExchangeRates extends SpecialPage {
     public function __construct() {
-        parent::__construct('ExchangeRates', '', false);
+        parent::__construct('ExchangeRates');
     }
 
     public function execute($subPage) {
