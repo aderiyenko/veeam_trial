@@ -1,4 +1,10 @@
 <?php
+/**
+ * Main extension class
+ *
+ * @file
+ * @ingroup Extensions
+ */
 namespace MediaWiki\Extension\ExchangeRates;
 
 use SpecialPage;

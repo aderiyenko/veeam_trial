@@ -13,7 +13,7 @@
     "ExchangeRates": "MediaWiki\\Extension\\ExchangeRates\\ExchangeRates"
   },
   "ExtensionMessagesFiles": {
-    "ExchangeRates": "src/ExchangeRates.i18n.alias.php"
+    "ExchangeRatesAlias": "ExchangeRates.i18n.alias.php"
   },
   "requires": {
     "MediaWiki": ">= 1.38.0",
@@ -24,13 +24,10 @@
   "ResourceModules": {
     "exchange.rates": {
       "scripts": [
-        "resources/exchange_rates.js"
+        "extensions/ExchangeRates/resources/exchange_rates.js"
       ],
       "styles": [
-        "resources/exchange_rates.css"
-      ],
-      "dependencies": [
-        "mediawiki.api"
+        "extensions/ExchangeRates/resources/exchange_rates.css"
       ]
     }
   }
